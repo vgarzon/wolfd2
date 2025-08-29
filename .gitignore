@@ -1,0 +1,15 @@
+# executable files
+wolfd2
+
+# object files
+*.o
+
+# editor
+.vscode/
+
+# macOS
+.DS_Store
+
+# scratch files
+/scratch/
+
