@@ -378,7 +378,7 @@ C---: Fill string with NULL characters
 
       implicit none
       character*(*) cNum
-      read(cNum,'(i)') inum
+      read(cNum,*) inum
 
       return
       end
@@ -391,7 +391,7 @@ C---: Fill string with NULL characters
 
       implicit none
       character*(*) cNum
-      read(cNum,'(i)') jnum
+      read(cNum,*) jnum
 
       return
       end
@@ -404,7 +404,7 @@ C---: Fill string with NULL characters
 
       implicit none
       character*(*) cNum
-      read(cNum,'(e)') rnum
+      read(cNum,*) rnum
 
       return
       end
@@ -417,7 +417,7 @@ C---: Fill string with NULL characters
 
       implicit none
       character*(*) cNum
-      read(cNum,'(e)') dnum
+      read(cNum,*) dnum
 
       return
       end
@@ -486,8 +486,8 @@ C---: Convergence indicators
 
       INTEGER nBanCnt, m, i
 
-      data (cHLine1(i:i),i=1,70) / 70 * '-' /
-      data (cHLine2(i:i),i=1,78) / 78 * '-' /
+      data cHLine1 / '----------------------------------------' /
+      data cHLine2 / '----------------------------------------' /
 
       data nBanCnt / 0 /
 
