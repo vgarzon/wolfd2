@@ -1,15 +1,21 @@
-# executable files
-wolfd2
+# Build artifacts
+build/
+bin/
 
-# object files
+# Object files
 *.o
+*.mod
 
-# editor
+# Profiling files
+gmon.out
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# IDE files
 .vscode/
 
-# macOS
+# OS files
 .DS_Store
-
-# scratch files
-/scratch/
-
