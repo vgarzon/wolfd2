@@ -1249,7 +1249,7 @@ C---: Construction of L and U from elements of a
         a(i,3) = a(i,3)/a(i,2)
       end do
       a(n,2) = a(n,2) - (a(n,1)*a(n-1,3))
-			
+
 C---: Forward substitution (Solve Ly=b)
       b(1) = b(1)/a(1,2)
       do i=2, n
@@ -1261,7 +1261,7 @@ C---: Backward substitution (Solve Ux=y)
       do i=(n-1), 1, -1
         x(i) = b(i) - (a(i,3)*x(i+1))
       end do
-			
+
       return
       end
 
@@ -1334,7 +1334,7 @@ C---: Backward substitution (Solve Ux=y)
       do i=(n-1), 1, -1
         b(i) = b(i) - (a(3,i)*b(i+1))
       end do
-			
+
       return
       end
 

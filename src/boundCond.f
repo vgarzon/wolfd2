@@ -1663,7 +1663,7 @@ C-------: N O R T H   Boundary :-------]
       include "config.f"
 
 C---: Arguments
-	   INTEGER nx, ny
+      INTEGER nx, ny
 
 C---: Number of regions in each direction
       INTEGER nReg(*)
