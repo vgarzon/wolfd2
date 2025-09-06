@@ -3,7 +3,7 @@
 */
 
 #define   REAL     real*8
-#define   FLOAT    real*4
+#define   FLOAT    real*8
 #define   INTEGER  integer*4
 #define   LOGICAL  logical*4
 
