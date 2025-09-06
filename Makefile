@@ -44,19 +44,19 @@ F77 = gfortran
 #
 # Basic compilation
 FFLAGS = -O2 -Wall -std=legacy -cpp
-FPPDEFS = -D_SMALLSCL_ -D_TIMEAVG_
+FPPDEFS = -D_SMALLSCL_ -D_TIMEAVG_ -D_TRAJECT_
 
 # Debug compilation
 FFLAGS_DEBUG = -g -O0 -Wall -std=legacy -cpp -fcheck=all
-FPPDEFS_DEBUG = -D_SMALLSCL_ -D_TIMEAVG_ -DDEBUG
+FPPDEFS_DEBUG = -D_SMALLSCL_ -D_TIMEAVG_ -D_TRAJECT_ -DDEBUG
 
 # Optimized compilation
 FFLAGS_OPT = -O3 -march=native -ffast-math -std=legacy -cpp
-FPPDEFS_OPT = -D_SMALLSCL_ -D_TIMEAVG_ -DNDEBUG
+FPPDEFS_OPT = -D_SMALLSCL_ -D_TIMEAVG_ -D_TRAJECT_ -DNDEBUG
 
 # Profile compilation
 FFLAGS_PROF = -O2 -pg -std=legacy -cpp
-FPPDEFS_PROF = -D_SMALLSCL_ -D_TIMEAVG_
+FPPDEFS_PROF = -D_SMALLSCL_ -D_TIMEAVG_ -D_TRAJECT_
 #
 ########################################################################
 # Suffixes
