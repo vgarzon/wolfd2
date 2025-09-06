@@ -1,7 +1,7 @@
 *-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*
 *                                                                      *
-*                               miscel.F                               *
-*
+*                               utility.f                              *
+*                                                                      *
 *-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*
 
 *----------------------------------------------------------------------*
@@ -12,8 +12,8 @@
 * DMaxNorm     - Maximum component (in absolute value) of an array
 * PTDAvg       - Average pressure (also t and d) at natural grid points
 * VelAvg       - Average velocity components at natural grid points
-* dLinInterp   -
-* TAveraged    -
+* dLinInterp   - Linear interpolation between two points
+* TAveraged    - Average temperature (also d) at natural grid points
 *
 *----------------------------------------------------------------------*
 
