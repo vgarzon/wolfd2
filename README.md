@@ -29,7 +29,8 @@ wolfd2/
 ├── build/            # Object files (*.o)
 ├── bin/              # Executables
 ├── docs/             # Documentation
-└── examples/         # Simulation examples
+├── examples/         # Simulation examples
+└── scratch/          # Temporary files and build artifacts
 ```
 
 ## Building
@@ -48,33 +49,39 @@ make setup
 # Build executable
 make
 
-# Run the program
-./bin/wolfd2
+# Run the program (currently optimized build is available)
+./bin/wolfd2_opt
 ```
 
 ### Build Options
 
 ```bash
-# Standard build (default)
+# Standard build (default) - creates wolfd2
 make
 
-# Debug build with full checking
+# Debug build with full checking - creates wolfd2_debug
 make debug
 
-# Optimized build for performance
+# Optimized build for performance - creates wolfd2_opt
 make optimized
 
-# Build with profiling support
+# Build with profiling support - creates wolfd2_prof
 make profile
 
 # Test compilation of individual files
 make test-compile
+
+# Test preprocessing of all files
+make preprocess-test
 
 # Clean build artifacts
 make clean
 
 # Deep clean (remove all generated files)
 make distclean
+
+# Show available build options
+make help
 ```
 
 ### Build Configurations
@@ -105,8 +112,10 @@ For detailed porting information, see `docs/gfortran-porting-guide.md`.
 ## Documentation
 
 - `docs/gfortran-porting-guide.md` - Comprehensive porting guide and technical details
+- `docs/original-hpux-makefile` - Original HP-UX build configuration for reference
 - `include/` - Header files and configuration
 - `src/` - Source code with detailed comments
+- `examples/` - Various simulation examples and test cases
 
 ## License
 
