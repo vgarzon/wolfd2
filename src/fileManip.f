@@ -215,7 +215,7 @@ C*** Temporary:  (yuk!)
  205  format(5(e14.6))
 
 
-     	select case(npostp)
+      select case(npostp)
       case(1)   !---> Plain Plot3D format (nx,ny)
 c        call SaveGrid2D(nx, ny, grdFile, x, y)   !---> Save grid
         open(11,file=solFile,status='unknown')
