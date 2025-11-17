@@ -111,6 +111,23 @@ For detailed porting information, see `docs/gfortran-porting-guide.md`.
 
 ## Documentation
 
+### Program Documentation
+
+- **[Program Documentation](docs/program-documentation.md)** - Comprehensive program documentation covering:
+  - Program architecture and module descriptions
+  - Execution flow and algorithms
+  - Data structures and variables
+  - Input/output formats
+
+### Visual Diagrams (Mermaid)
+
+- **[Program Flow Diagram](docs/diagrams/program-flow.md)** - Overall execution flow from startup to completion
+- **[Data Flow Diagram](docs/diagrams/data-flow.md)** - Data transformations through the program
+- **[Module Architecture Diagram](docs/diagrams/module-architecture.md)** - Module dependencies and call relationships
+- **[Time-Step Algorithm Diagram](docs/diagrams/time-step-algorithm.md)** - Detailed time-stepping algorithm
+
+### Technical Documentation
+
 - `docs/gfortran-porting-guide.md` - Comprehensive porting guide and technical details
 - `docs/original-hpux-makefile` - Original HP-UX build configuration for reference
 - `include/` - Header files and configuration
